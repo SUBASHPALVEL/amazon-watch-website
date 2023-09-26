@@ -5,8 +5,15 @@ import classes from './App.module.css';
 import ProductPreview from './ProductPreview';
 import ProductDetails from './ProductDetails';
 import Topbar from './Topbar';
+import ProductData from './ProductData';
 
 class App extends Component {
+
+  state = {
+    productData: ProductData
+  }
+
+
 
   
 render() {
@@ -16,7 +23,7 @@ render() {
       
     <div className={classes.MainContainer}>
       <ProductPreview/>
-        <ProductDetails/>
+        <ProductDetails data={this.state.productData}/>
 {/*         
       <div className={classes.ProductPreview}>
       </div>

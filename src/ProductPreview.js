@@ -20,10 +20,12 @@ const ProductPreview = (props) => {
         </div>
       }
 
-      <div className={classes.HeartBeatSection}>
+      {/* <div className={classes.HeartBeatSection}>
         <i class="fas fa-heartbeat"></i>
         <p>76</p>
       </div>
+      */}
+      
     </div>
   );
 };
